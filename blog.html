@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog — Uluwatu Paradise | Luxury Living &amp; Investment in Bali</title>
+    <meta name="description" content="Explore our blog for guides on luxury living in Uluwatu, Bali — from villa investment tips to surf spots, weddings, and honeymoon planning.">
+    <meta name="keywords" content="uluwatu blog, bali luxury living, uluwatu investment guide, bali travel blog">
+    <link rel="canonical" href="https://uluwatuparadise.com/blog.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Blog — Uluwatu Paradise">
+    <meta property="og:description" content="Guides on luxury living, investment, and travel in Uluwatu, Bali.">
+    <meta property="og:url" content="https://uluwatuparadise.com/blog.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Uluwatu Paradise">
+
+    <!-- CollectionPage Schema -->
+    <script type="application/ld+json">{
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Uluwatu Paradise Blog",
+        "description": "Guides on luxury living, investment, and travel in Uluwatu, Bali.",
+        "url": "https://uluwatuparadise.com/blog.html",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Uluwatu Paradise",
+            "url": "https://uluwatuparadise.com"
+        }
+    }</script>
+
+    <style>
+        :root {
+            --accent: #e6a817;
+            --accent-light: rgba(230,168,23,0.1);
+            --bg: #fafafa;
+            --text: #333;
+            --text-dark: #1a1a1a;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.8; color: var(--text); background: var(--bg); }
+
+        .site-nav { display: flex; align-items: center; justify-content: space-between; padding: 16px 40px; background: #1a1a2e; position: sticky; top: 0; z-index: 100; }
+        .site-nav .logo { color: #fff; font-weight: 700; font-size: 1.1rem; text-decoration: none; letter-spacing: 1px; }
+        .site-nav .logo span { color: var(--accent); }
+        .site-nav ul { list-style: none; display: flex; gap: 28px; }
+        .site-nav a { color: #ccc; text-decoration: none; font-size: 0.85rem; letter-spacing: 1.5px; font-weight: 500; transition: color 0.2s; }
+        .site-nav a:hover, .site-nav a.active { color: var(--accent); }
+        .site-nav .wa-btn { background: #25d366; color: #fff !important; padding: 8px 18px; border-radius: 6px; font-size: 0.8rem; }
+        .hamburger { display: none; background: none; border: none; color: #fff; font-size: 1.5rem; cursor: pointer; }
+
+        .page-hero { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%); color: #fff; padding: 80px 40px; text-align: center; }
+        .page-hero h1 { font-size: 2.8rem; margin-bottom: 16px; letter-spacing: 2px; }
+        .page-hero p { font-size: 1.2rem; color: #ccc; max-width: 600px; margin: 0 auto; }
+
+        .content-section { max-width: 1000px; margin: 0 auto; padding: 60px 20px; }
+
+        .blog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 28px; }
+        .blog-card { background: #fff; border-radius: 12px; overflow: hidden; border: 1px solid #eee; transition: box-shadow 0.2s, transform 0.2s; text-decoration: none; color: inherit; }
+        .blog-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.1); transform: translateY(-2px); }
+        .blog-card img { width: 100%; height: 200px; object-fit: cover; }
+        .blog-card-body { padding: 24px; }
+        .blog-card-body h2 { font-size: 1.2rem; margin-bottom: 8px; color: var(--text-dark); line-height: 1.4; }
+        .blog-card-body p { font-size: 0.95rem; color: #666; margin-bottom: 12px; }
+        .blog-card-body .meta { font-size: 0.8rem; color: #999; }
+        .read-more { color: var(--accent); font-weight: 600; font-size: 0.9rem; }
+
+        .site-footer { background: #1a1a2e; color: #999; padding: 40px; text-align: center; font-size: 0.9rem; }
+        .site-footer a { color: var(--accent); text-decoration: none; }
+        .footer-links { display: flex; justify-content: center; gap: 24px; margin-bottom: 16px; flex-wrap: wrap; }
+        .footer-links a { color: #ccc; }
+
+        @media (max-width: 768px) {
+            .site-nav ul { display: none; }
+            .hamburger { display: block; }
+            .site-nav.open ul { display: flex; flex-direction: column; position: absolute; top: 56px; left: 0; right: 0; background: #1a1a2e; padding: 20px; }
+            .page-hero h1 { font-size: 1.8rem; }
+            .page-hero { padding: 50px 20px; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="site-nav" id="nav">
+        <a href="/" class="logo">ULUWATU <span>PARADISE</span></a>
+        <button class="hamburger" onclick="document.getElementById('nav').classList.toggle('open')">&#9776;</button>
+        <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/#villas">PROJECTS</a></li>
+            <li><a href="/about.html">ABOUT</a></li>
+            <li><a href="/blog.html" class="active">BLOG</a></li>
+            <li><a href="/faq.html">FAQ</a></li>
+            <li><a href="/#contact">CONTACT</a></li>
+            <li><a href="https://wa.me/6285190520175" class="wa-btn">WhatsApp</a></li>
+        </ul>
+    </nav>
+
+    <section class="page-hero">
+        <h1>Blog</h1>
+        <p>Your guide to luxury living, investment opportunities, and the best of Uluwatu, Bali.</p>
+    </section>
+
+    <section class="content-section">
+        <div class="blog-grid">
+            <a href="/blog/uluwatu-wedding-venues-guide.html" class="blog-card">
+                <img src="/blog/uluwatu-wedding-venues-guide.jpg" alt="Uluwatu Wedding Venues" onerror="this.style.display='none'">
+                <div class="blog-card-body">
+                    <h2>Uluwatu Wedding Venues: Dream Celebrations on the Cliffs</h2>
+                    <p>Discover stunning clifftop wedding venues in Uluwatu with breathtaking ocean views for your dream celebration.</p>
+                    <span class="meta">March 13, 2026</span><br>
+                    <span class="read-more">Read more &rarr;</span>
+                </div>
+            </a>
+            <a href="/blog/bali-honeymoon-uluwatu-guide.html" class="blog-card">
+                <img src="/blog/bali-honeymoon-uluwatu-guide.jpg" alt="Bali Honeymoon Guide" onerror="this.style.display='none'">
+                <div class="blog-card-body">
+                    <h2>Bali Honeymoon Guide: Romantic Experiences in Uluwatu</h2>
+                    <p>Discover the ultimate Bali honeymoon in Uluwatu with luxury villas, private pools, and ocean views.</p>
+                    <span class="meta">March 6, 2026</span><br>
+                    <span class="read-more">Read more &rarr;</span>
+                </div>
+            </a>
+            <a href="/blog/luxury-villas-uluwatu-guide.html" class="blog-card">
+                <img src="/blog/luxury-villas-uluwatu-guide.jpg" alt="Luxury Villas Uluwatu" onerror="this.style.display='none'">
+                <div class="blog-card-body">
+                    <h2>Luxury Villas in Uluwatu: Your Guide to Paradise Living</h2>
+                    <p>Discover luxury villas in Uluwatu Bali with private pools, ocean views, and exceptional concierge services.</p>
+                    <span class="meta">March 6, 2026</span><br>
+                    <span class="read-more">Read more &rarr;</span>
+                </div>
+            </a>
+            <a href="/blog/ultimate-guide-experiencing-uluwatu-style.html" class="blog-card">
+                <img src="/blog/ultimate-guide-experiencing-uluwatu-style.jpg" alt="Uluwatu Style Guide" onerror="this.style.display='none'">
+                <div class="blog-card-body">
+                    <h2>Ultimate Guide to Experiencing Uluwatu in Style</h2>
+                    <p>Discover the luxury side of Uluwatu with our exclusive guide on villa stays, dining, and activities.</p>
+                    <span class="meta">March 1, 2026</span><br>
+                    <span class="read-more">Read more &rarr;</span>
+                </div>
+            </a>
+            <a href="/blog/top-uluwatu-surf-spots-luxury.html" class="blog-card">
+                <img src="/blog/top-uluwatu-surf-spots-luxury.jpg" alt="Uluwatu Surf Spots" onerror="this.style.display='none'">
+                <div class="blog-card-body">
+                    <h2>Top 5 Uluwatu Surf Spots for Luxury Wave Seekers</h2>
+                    <p>Discover the top surf spots in Uluwatu perfect for luxury travelers seeking the best waves and views.</p>
+                    <span class="meta">March 1, 2026</span><br>
+                    <span class="read-more">Read more &rarr;</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-links">
+            <a href="/">Home</a>
+            <a href="/#villas">Projects</a>
+            <a href="/about.html">About Us</a>
+            <a href="/blog.html">Blog</a>
+            <a href="/faq.html">FAQ</a>
+        </div>
+        <p>Jl. Pantai Balangan, Ungasan, Kec. Kuta Sel., Kabupaten Badung, Bali 80361</p>
+        <p><a href="mailto:info@nghpropertygroup.com">info@nghpropertygroup.com</a> | <a href="https://wa.me/6285190520175">WhatsApp</a></p>
+        <p style="margin-top: 16px;">&copy; 2026 Uluwatu Paradise by Next Gen Home | <a href="https://linkaiagency.com">Powered by LinkAI</a></p>
+    </footer>
+</body>
+</html>
